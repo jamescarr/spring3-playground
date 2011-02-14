@@ -4,9 +4,7 @@ apply plugin: 'eclipse'
 repositories{
   mavenCentral();
   mavenRepo urls: ["http://maven.springframework.org/milestone",
-	"https://repository.jboss.org/nexus/",
-	"http://repository.jboss.org/maven2/",
-	"http://repo1.maven.org/maven2"]
+	"https://repository.jboss.org/nexus/content/groups/public/"]
 
 }
 
@@ -15,11 +13,12 @@ dependencies{
   compile 'org.springframework:spring-context:3.1.0.M1'
   compile 'org.springframework:spring-webmvc:3.1.0.M1'
   compile 'net.sf.ehcache:ehcache-core:2.3.2'
-  compile 'org.jboss.resteasy:resteasy-jaxrs:2.0.0.GA'
-  compile 'org.jboss.resteasy:jaxrs-api:2.0.0.GA'
-  compile 'org.jboss.resteasy:resteasy-spring:2.0.0.GA'
-  compile 'org.jboss.resteasy:resteasy-jaxb-provider:2.0.0.GA'
-  compile 'org.jboss.resteasy:resteasy-jettison-provider:2.0.0.GA'
+  compile 'org.jboss.resteasy:resteasy-jaxrs:2.1.0.GA'
+  compile 'org.jboss.resteasy:jaxrs-api:2.1.0.GA'
+  compile 'org.jboss.resteasy:resteasy-spring:2.1.0.GA'
+  compile 'org.jboss.resteasy:resteasy-jaxb-provider:2.1.0.GA'
+  compile 'org.jboss.resteasy:resteasy-jettison-provider:2.1.0.GA'
+  compile 'org.codehaus.jettison:jettison:1.2'
   
   runtime 'org.slf4j:jcl-over-slf4j:1.6.1'
   runtime 'org.slf4j:slf4j-log4j12:1.6.1'

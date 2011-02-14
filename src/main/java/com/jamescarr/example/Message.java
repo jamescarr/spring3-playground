@@ -1,5 +1,8 @@
 package com.jamescarr.example;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Message {
 	private String text;
 	private String title;
